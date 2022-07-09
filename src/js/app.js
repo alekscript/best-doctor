@@ -1,5 +1,4 @@
 import * as flsFunctions from "./modules/testWebP.js";
-
 flsFunctions.isWebp();
 //Smooth Scroll with close mobile menu
 const anchors = document.querySelectorAll('.menu__item a[href*="#"]')

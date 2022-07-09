@@ -146,7 +146,7 @@
         width: 50%;
     }
     .choose__content{
-        background-image: none;
+        background-image: none !important;
         justify-content: space-around;
         gap: 30px;
     }
@@ -186,8 +186,9 @@
     }
     .about{
         min-height: auto;
-        background-image: none;
+        background-image: none !important;
     }
+
     .about__content{
         margin: 0 auto;
     }
@@ -260,5 +261,8 @@
     }
     .choose__rewards-item{
         width: 100%;
+    }
+    .choose__rewards{
+        background-position: 0 0 !important;
     }
 }
