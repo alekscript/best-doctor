@@ -9,6 +9,15 @@
     .about__content{
         padding: 150px 0;
     }
+    .service__list-item{
+        padding: 50px 15px;
+    }
+    .service__list-title{
+        font-size: 22px;
+    }
+    .choose__rewards{
+        padding: 100px 0;
+    }
 }
 
 
@@ -130,6 +139,25 @@
         font-size: 40px;
         line-height: 48px;
     }
+    .service__list{
+        flex-wrap: wrap;
+    }
+    .service__list-item{
+        width: 50%;
+    }
+    .choose__content{
+        background-image: none;
+        justify-content: space-around;
+        gap: 30px;
+    }
+    .choose__rewards-list{
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+    .choose__rewards-item{
+        margin: 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -172,6 +200,42 @@
         font-size: 16px;
         line-height: 24px;
     }
+    .choose{
+        padding: 70px 0;
+    }
+    .choose__title{
+        font-size: 40px;
+    }
+    .choose__content-item__title{
+        font-size: 24px;
+    }
+    .choose__content{
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 0;
+    }
+    .choose__content-item {
+        max-width: 500px;
+        padding: 20px 0;
+        margin: 0;
+    }
+    .choose__content-item__header{
+        justify-content: center;
+    }
+    .choose__rewards-item {
+        width: 40%;
+    }
+    .choose__rewards-text{
+        max-width: 100%;
+    }
+    .choose__rewards-item span{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .choose__rewards-text{
+        font-size: 18px;
+        line-height: 25px;
+    }
 }
 
 @media (max-width: 560px) {
@@ -190,5 +254,11 @@
     }
     .btn--about{
         padding: 12px 25px;
+    }
+    .service__list-item{
+        width: 100%;
+    }
+    .choose__rewards-item{
+        width: 100%;
     }
 }

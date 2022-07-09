@@ -113,9 +113,162 @@
 }
 // ABOUT SECTION 
 
+// SERVICE SECTION
+.service{
+    &__list{
+        display: flex;
+        justify-content: space-around;
+    }
+    &__list-item{
+        padding: 70px 50px 60px;
+        text-align: center;
+        &--treatment{
+            background-color: #43b1d2;
+        }
+        &--help{
+            background-color: #3fb6c6;
+        }
+        &--staff{
+            background-color: #3cbbbb;
+        }
+        &--doctors{
+            background-color: #37c3a8;
+        }
+    }
+    &__list-item__top{
+        background-color: #fff;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    &__list-title{
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 30px;
+        line-height: 32px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    &__list-text{
+        color: #fff;
+        font-family: OpenSans;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+
+// CHOOSE SECTION
+.choose{
+    padding-top: 100px;
+    &__content{
+        background-image: url('@img/choose-bg.png');
+        background-position: bottom center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content-item{
+        max-width: 320px;
+        margin: 50px 0;
+        &__header{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        &__box{
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            background-color: $blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__title{
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 32px;
+        }
+        &__text{
+            font-size: 16px;
+            line-height: 30px;
+            font-family: OpenSans;
+        }
+    }
+    &__title{
+        font-size: 45px;
+        font-family: Montserrat;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    &__text{
+        font-size: 16px;
+        font-weight: 400;
+        font-family: OpenSans;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    &__rewards{
+        background-image: url('@img/work-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right center;
+        padding: 150px 0;
+    }
+    &__rewards-list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__rewards-item{
+        margin: 0 30px;
+        text-align: center;
+        color: #fff;
+        font-family: Montserrat;
+        font-weight: 500;
+        span{
+            display: block;
+            font-size: 60px;
+            line-height: 60px;
+            padding: 20px 0;
+            position: relative;
+            margin-bottom: 15px;
+            &::after{
+                position: absolute;
+                content: "";
+                height: 7px;
+                width: 80px;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-40px);
+                background-color: #fff;
+            }
+        }
+    }
+    &__rewards-text{
+        font-size: 25px;
+        line-height: 35px;
+        max-width: 170px;
+    }
+    &__rewards-img{
+        margin-bottom: 20px;
+        height: 80px;
+    }
+}
 
 
-
+.footer{
+    background-color: $black;
+}
 
 
 
