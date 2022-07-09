@@ -3,7 +3,115 @@
 @import "fonts";
 @import "global";
 
+// Header SECTION
+.header{
+    padding-top: 40px;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #ececec;
+    }
+    &__contacts{
+        display: flex;
+        gap: 40px;
+    }
+    &__contacts-top{
+        background-color: $blue;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
+    &__contacts-item{
+        display: flex;
+        align-items: center;
+    }
+    &__contacts-title{
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 22px;
+    }
+    &__contacts-text{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+    }
+    &__content{
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
 
+
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.menu {
+    display: flex;
+    // .menu__item
+    &__item {
+        margin: 0 15px;
+        color: $gray;
+        transition: all .3s;
+        &:first-child{
+            margin-left: 0;
+        }
+        &:hover{
+            color: $black;
+        }
+    }
+    // .menu__item-link
+    &__item-link {
+        color: $gray;
+        font-size: 20px;
+        font-family: Nexa;
+        font-weight: 700;
+        line-height: 110%;
+    }
+}
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+// Header SECTION
+
+// ABOUT SECTION 
+.about{
+    background-image: url('@img/main-bg.jpg');
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    background-color: #cbd4e6;
+    &__content{
+        padding: 180px 0;
+        max-width: 575px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        margin-bottom: 20px;
+    }
+    &__text{
+        margin-bottom: 40px;
+    }
+}
+// ABOUT SECTION 
 
 
 
