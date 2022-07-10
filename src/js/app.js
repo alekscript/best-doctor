@@ -48,3 +48,20 @@ function burgerMenu() {
     })
   }
   burgerMenu()
+
+  // function openCloseDetails(event) {
+  //   if (event.target.classList.contains('blog__creatives-link')){  
+  //     let card_text = event.target.closest('.blog__creatives-item').querySelector('.blog__creatives-text');
+  //     card_text.hidden = !card_text.hidden;
+  //   }
+  // };
+  
+  // document.querySelector('.blog__creatives').addEventListener("click", openCloseDetails);
+
+  const wrapper = document.querySelector('.blog__creatives');
+  wrapper.addEventListener('click', (event) => {
+    if(event.target.classList.contains('blog__creatives-link')){
+      let hiddenText = event.target.closest('.blog__creatives-item').querySelector('.blog__creatives-text');
+      hiddenText.hidden = !hiddenText.hidden;
+    }
+  })
