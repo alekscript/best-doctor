@@ -1,5 +1,6 @@
 import * as flsFunctions from "./modules/testWebP.js";
 flsFunctions.isWebp();
+import { Fancybox } from "/node_modules/@fancyapps/ui/dist/fancybox.esm.js";
 //Smooth Scroll with close mobile menu
 const anchors = document.querySelectorAll('.menu__item a[href*="#"]')
 
@@ -49,15 +50,6 @@ function burgerMenu() {
   }
   burgerMenu()
 
-  // function openCloseDetails(event) {
-  //   if (event.target.classList.contains('blog__creatives-link')){  
-  //     let card_text = event.target.closest('.blog__creatives-item').querySelector('.blog__creatives-text');
-  //     card_text.hidden = !card_text.hidden;
-  //   }
-  // };
-  
-  // document.querySelector('.blog__creatives').addEventListener("click", openCloseDetails);
-
   const wrapper = document.querySelector('.blog__creatives');
   wrapper.addEventListener('click', (event) => {
     if(event.target.classList.contains('blog__creatives-link')){
@@ -65,3 +57,4 @@ function burgerMenu() {
       hiddenText.hidden = !hiddenText.hidden;
     }
   })
+

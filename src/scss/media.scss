@@ -34,6 +34,15 @@
         height: auto;
         width: 280px;
     }
+    .team{
+        padding: 100px 0;
+    }
+    .team__content{
+        flex-wrap: wrap;
+        max-width: 700px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
 }
 
 
@@ -204,6 +213,12 @@
         max-width: 598px;
         margin: 0 auto;
     }
+    .gallery{
+        padding: 70px 0;
+    }
+    .team{
+        padding: 70px 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -289,6 +304,12 @@
     .blog__text{
         font-size: 15px;
     }
+    .gallery__title{
+        font-size: 40px;
+    }
+    .team__title{
+        font-size: 40px;
+    }
 }
 
 @media (max-width: 560px) {
@@ -310,6 +331,9 @@
     }
     .service__list-item{
         width: 100%;
+    }
+    .choose__title {
+        font-size: 36px;
     }
     .choose__rewards-item{
         width: 100%;
@@ -341,5 +365,9 @@
     .blog__creatives-link{
         font-size: 16px;
         font-weight: 700;
+    }
+    .gallery__item{
+        width: 280px;
+        height: auto;
     }
 }
