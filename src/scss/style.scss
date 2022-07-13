@@ -409,7 +409,7 @@
 }
 
 .team{
-    padding: 130px 0;
+    padding-top: 130px;
     &__title{
         font-size: 45px;
         color: #494949;
@@ -428,6 +428,7 @@
         display: flex;
         justify-content: center;
         gap: 30px;
+        padding-bottom: 130px;
     }
     &__content-item{
         text-align: center;
@@ -453,11 +454,174 @@
     }
 }
 
-.footer{
-    background-color: $black;
+.special{
+    padding: 60px 0;
+    background-color: $lightG;
+    &__content{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+    }
+    &__content-title{
+        font-family: Montserrat;
+        font-weight: 700;
+        color: $darkG;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    &__btn{
+        display: inline-block;
+    }
 }
 
+.footer{
+    background-color: #171717;
+    &__inner{
+        padding: 100px 0;
+    }
+    &__content{
+        display: flex;  
+        justify-content: space-between;
+        align-items: flex-start;    
+        gap: 30px;
+    }
+    &__content-item{
+        color: #8d8d8d;
+        line-height: 24px;
+        font-size: 16px;
+    }
+    &__content-title{
+        font-size: 22px;
+        line-height: 24px;
+        color: #fff;
+        font-family: OpenSans;
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+    &__content-item--adress{
+        max-width: 299px;
+    }
+    .social-link{
+        svg{
+            fill: #fff;
+            transition: all .3s;
+            circle{
+                stroke: #fff;
+                transition: all .3s;
+            }
+        }
+        svg:hover{
+            fill: $blue;
+            circle{
+                stroke: $blue; 
+            }   
+        }
+    }
+    &__contacts-item{
+        margin-bottom: 50px;
+        padding-left: 80px;
+        position: relative;
+        &::before{
+            position: absolute;
+            background-repeat: no-repeat;
+            content: "";
+            left: 0;
+            top: 5px;
+        }
+    }
+    &__contacts-item--adress{
+        &::before{
+            background-image: url('@img/footer-icons/mail.png');
+            width: 40px;
+            height: 31px;
+        }
+    }
+    &__contacts-item--phone{
+        &::before{
+            background-image: url('@img/footer-icons/phone.png');
+            width: 27px;
+            height: 40px;
+        }
+    }
+    &__contacts-item--map{
+        &::before{
+            background-image: url('@img/footer-icons/map.png');
+            width: 38px;
+            height: 40px;
+        }
+    }
+    &__content-item--links{
+        max-width: 220px;
+    }
+    &__content-item--services{
+        max-width: 220px;
+    }
+    &__links-item{
+        padding-left: 45px;
+        position: relative;
+        line-height: 35px;
+        &::before{
+            position: absolute;
+            left: 15px;
+            top: 11px;
+            background-image: url('@img/play-icon.png');
+            background-repeat: no-repeat;
+            content: "";
+            width: 12px;
+            height: 12px;
+        }
+    }
+    &__links-link{
+        color: #8d8d8d;
+        transition: all .3s;
+    }
+    &__links-link:hover{
+        color: #fff;
+    }
+    &__content-item--form{
+        max-width: 240px;
+    }
+    &__form-input{
+        width: 100%;
+        padding: 20px 0;
+        border-bottom: 1px solid rgb(97, 85, 85);
+    }
+    &__form-text{
+        width: 100%;
+        padding: 20px 0;
+        border-bottom: 1px solid rgb(97, 85, 85);
+        width: 240px;
+        height: 120px;
+        resize: none;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+    }
+    &__form-btn{
+        padding: 12px 35px;
+        text-transform: uppercase;
+        width: 130px;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 25px;
+    }
+    &__bottom{
+        padding: 50px 0;
+        background-color: #1a1a1a;
+        color: rgb(97, 85, 85);
+        font-size: 13px;
+        line-height: 24px;
+        font-family: OpenSans;
+        text-align: center;
+    }
+}
 
+    
+
+  
 
 
 
